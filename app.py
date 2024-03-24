@@ -75,7 +75,7 @@ def main():
     if "chat_history" not in st.session_state:
         st.session_state.chat_history = None
 
-    st.header("Demystifying Asset Service Contracts Instantly :books:")
+    st.header("Demystifying Asset Service Contracts :books:")
     user_question = st.text_input("Ask a question About Asset Service Contracts:")
     if user_question:
         handle_userinput(user_question)
