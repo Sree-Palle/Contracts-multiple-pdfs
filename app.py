@@ -75,7 +75,7 @@ def main():
     if "chat_history" not in st.session_state:
         st.session_state.chat_history = None
 
-    st.header("Chat with multiple PDFs :books:")
+    st.header("Demystifying Asset Service Contracts  :books:")
     user_question = st.text_input("Ask a question About Asset Service Contracts:")
     if user_question:
         handle_userinput(user_question)
@@ -83,7 +83,7 @@ def main():
     with st.sidebar:
         st.subheader("Upload Asset Service Contracts Hackathon Demo")
         pdf_docs = st.file_uploader(
-            "Upload your Asset Service Contracts (pdf) here and click on 'Process'", accept_multiple_files=True)
+            "Upload your Asset Service Contracts (pdf) here and click on 'upload'", accept_multiple_files=True)
         if st.button("Upload and Process into vector store"):
             with st.spinner("Processing"):
                 # get pdf text
